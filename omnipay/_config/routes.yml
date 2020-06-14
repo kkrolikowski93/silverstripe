@@ -1,0 +1,8 @@
+---
+Name: omnipay-routes
+After: framework/routes#coreroutes
+---
+Director:
+  rules:
+    'paymentendpoint' : '\SilverStripe\Omnipay\PaymentGatewayController'
+    'dev/payment' : '\SilverStripe\Omnipay\Admin\PaymentDevelopmentAdmin'
